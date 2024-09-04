@@ -7,12 +7,12 @@ public class Main {
         int salary = 15_000;
         int total = 0;
         int month = 0;
-        do {
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        while (total <= 2_459_000) {
             total = total + salary;
             month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
-        while (total <= 2_459_00);
+        //в условиях задачи ничего не сказано про проценты
 
 
         System.out.println();
@@ -33,7 +33,7 @@ public class Main {
         System.out.println("  Задача №3.");
         int population = 12_000_000;
         //рождаемость 17 на 1000 населения
-        //смертность 8 на 1000 носеления
+        //смертность 8 на 1000 населения
         //Год …, численность населения составляет
         for (int g = 1; g <= 10; g++) {
             population = population + population * 17 / 1000 - population * 8 / 1000;
@@ -45,7 +45,7 @@ public class Main {
         System.out.println("  Задача №4.");
         int savings = 15_000;
         int months = 0;
-        //Как я понял из условий ,он положил деньги 1 раз и приболь идет из процетна банка
+        //Как я понял из условий ,он положил деньги 1 раз и прибыль идет из процента банка
         do {
             savings = savings + savings / 100 * 7;
             months++;
@@ -56,33 +56,33 @@ public class Main {
 
         System.out.println();
         System.out.println("  Задача №5.");
-        int savings1 = 15_000;
-        int months1 = 0;
+        int financingForTask5 = 15_000;
+        int monthsTask5 = 0;
         do {
-            savings1 = savings1 + savings1 / 100 * 7;
-            months1++;
-            if (months1 % 6 == 0) {
-                System.out.println(months1 + " месец, сумма накоплений - " + savings1);
-            } else if (months1 % 6 != 0 && savings1 >= 12_000_000) {
-                System.out.println(months1 + " месец, сумма накоплений - " + savings1);
+            financingForTask5 = financingForTask5 + financingForTask5 / 100 * 7;
+            monthsTask5++;
+            if (monthsTask5 % 6 == 0) {
+                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financingForTask5);
+            } else if (monthsTask5 % 6 != 0 && financingForTask5 >= 12_000_000) {
+                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financingForTask5);
             }
-        } while (savings1 < 12_000_000);
+        } while (financingForTask5 < 12_000_000);
 
 
         System.out.println();
         System.out.println("  Задача №6.");
-        int savings2 = 15_000;
-        int months2 = 0;
+        int financingForTask6 = 15_000;
+        int monthsTask6 = 0;
         int yearsOld9 = 9 * 12;
         do {
-            savings2 = savings2 + savings2 / 100 * 7;
-            months2++;
-            if (months2 % 6 == 0) {
-                System.out.println(months2 + " месец, сумма накоплений - " + savings2);
-            } else if (months2 % 6 != 0 && months2 == yearsOld9) {
-                System.out.println(months2 + " месец, сумма накоплений - " + savings2);
+            financingForTask6 = financingForTask6 + financingForTask6 / 100 * 7;
+            monthsTask6++;
+            if (monthsTask6 % 6 == 0) {
+                System.out.println(monthsTask6 + " месец, сумма накоплений - " + financingForTask6);
+            } else if (monthsTask6 % 6 != 0 && monthsTask6 == yearsOld9) {
+                System.out.println(monthsTask6 + " месец, сумма накоплений - " + financingForTask6);
             }
-        } while (months2 != yearsOld9);
+        } while (monthsTask6 != yearsOld9);
 
 
         System.out.println();
