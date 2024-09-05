@@ -23,8 +23,8 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
-        for (; i >= 1; i--) {
-            System.out.print(i + " ");
+        for (int j = 10; j >= 1; j--) {
+            System.out.print(j + " ");
         }
 
 
@@ -49,46 +49,43 @@ public class Main {
         do {
             savings = savings + savings / 100 * 7;
             months++;
-            System.out.println(months + " месец, сумма накоплений - " + savings);
-        }
-        while (savings < 12_000_000);
+            System.out.println(months + " месяц, сумма накоплений - " + savings);
+        } while (savings < 12_000_000);
 
 
         System.out.println();
         System.out.println("  Задача №5.");
-        int financingForTask5 = 15_000;
+        float financing = 15_000f;
         int monthsTask5 = 0;
-        do {
-            financingForTask5 = financingForTask5 + financingForTask5 / 100 * 7;
+        while (financing < 12_000_000) {
+            financing = financing + financing / 100 * 7;
             monthsTask5++;
             if (monthsTask5 % 6 == 0) {
-                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financingForTask5);
-            } else if (monthsTask5 % 6 != 0 && financingForTask5 >= 12_000_000) {
-                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financingForTask5);
+                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financing);
+            }else if (monthsTask5 % 6 != 0 && financing >= 12_000_000) {
+                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financing);
             }
-        } while (financingForTask5 < 12_000_000);
+        }
 
 
         System.out.println();
         System.out.println("  Задача №6.");
-        int financingForTask6 = 15_000;
+        float financingForTask6 = 15_000f;
         int monthsTask6 = 0;
         int yearsOld9 = 9 * 12;
-        do {
+        while (monthsTask6 != yearsOld9) {
             financingForTask6 = financingForTask6 + financingForTask6 / 100 * 7;
             monthsTask6++;
             if (monthsTask6 % 6 == 0) {
-                System.out.println(monthsTask6 + " месец, сумма накоплений - " + financingForTask6);
-            } else if (monthsTask6 % 6 != 0 && monthsTask6 == yearsOld9) {
-                System.out.println(monthsTask6 + " месец, сумма накоплений - " + financingForTask6);
+                System.out.println(monthsTask6 + " месяц, сумма накоплений - " + financingForTask6);
             }
-        } while (monthsTask6 != yearsOld9);
+        }
 
 
         System.out.println();
         System.out.println("  Задача №7.");
         int friday = 3;
-        for (; friday < 31; friday += 7) {
+        for (; friday <= 31; friday += 7) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
 
