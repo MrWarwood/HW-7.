@@ -43,7 +43,7 @@ public class Main {
 
         System.out.println();
         System.out.println("  Задача №4.");
-        int savings = 15_000;
+        double savings = 15_000;
         int months = 0;
         //Как я понял из условий ,он положил деньги 1 раз и прибыль идет из процента банка
         do {
@@ -55,14 +55,12 @@ public class Main {
 
         System.out.println();
         System.out.println("  Задача №5.");
-        float financing = 15_000f;
+        double financing = 15_000;
         int monthsTask5 = 0;
         while (financing < 12_000_000) {
             financing = financing + financing / 100 * 7;
             monthsTask5++;
             if (monthsTask5 % 6 == 0) {
-                System.out.println(monthsTask5 + " месец, сумма накоплений - " + financing);
-            }else if (monthsTask5 % 6 != 0 && financing >= 12_000_000) {
                 System.out.println(monthsTask5 + " месец, сумма накоплений - " + financing);
             }
         }
@@ -70,7 +68,7 @@ public class Main {
 
         System.out.println();
         System.out.println("  Задача №6.");
-        float financingForTask6 = 15_000f;
+        double financingForTask6 = 15_000f;
         int monthsTask6 = 0;
         int yearsOld9 = 9 * 12;
         while (monthsTask6 != yearsOld9) {
