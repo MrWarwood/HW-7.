@@ -68,7 +68,7 @@ public class Main {
 
         System.out.println();
         System.out.println("  Задача №6.");
-        double financingForTask6 = 15_000f;
+        double financingForTask6 = 15_000;
         int monthsTask6 = 0;
         int yearsOld9 = 9 * 12;
         while (monthsTask6 != yearsOld9) {
